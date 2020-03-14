@@ -1,4 +1,4 @@
-NAME := hello
-RS_SRC := hello.rs
+NAME := helloworld-rs
+RS_SRC := helloworld-rs.rs
 
 include ../make.inc
