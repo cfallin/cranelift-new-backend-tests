@@ -1,0 +1,7 @@
+See individual directories and source headers in programs that have been imported:
+
+* bz2/bz2.c
+* sha256/sha256.{c,h}
+
+Source code written specifically for this benchmark collection is released into
+the public domain.
