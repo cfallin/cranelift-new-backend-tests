@@ -34,6 +34,8 @@ int main() {
   mbedtls_sha256_context ctx;
   uint8_t output[32];
 
+  puts("sha256: start");
+
   mbedtls_sha256_init(&ctx);
 
   mbedtls_sha256_starts_ret(&ctx, /* is224 = */ 0);

@@ -2,6 +2,8 @@ use regex::Regex;
 use std::process::exit;
 
 fn main() {
+    println!("regex-rs: start");
+
     // Regex matching US-format phone numbers: (123) 456-7890
     let re = Regex::new(r"\(\d{3}\) \d{3}-\d{4}").unwrap();
 

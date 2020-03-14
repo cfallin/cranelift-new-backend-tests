@@ -38,6 +38,8 @@ fn my_assert(cond: bool) {
 }
 
 fn main() {
+    println!("qsort: start");
+
     let mut data = vec![];
     for i in 0..100000 {
         data.push(4987 * i % 4919); // 4987, 4919 are primes

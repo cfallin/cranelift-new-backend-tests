@@ -6074,6 +6074,9 @@ static HWord g_serviceFn ( HWord arg1, HWord arg2 )
 {
    switch (arg1) {
       case 0: /* EXIT */
+         if (arg2 != 0) {
+            puts("bz2: FAIL");
+         }
          exit(arg2);
       case 1: /* PUTC */
          putchar(arg2);
@@ -6123,6 +6126,8 @@ int main ( int argc, char** argv )
 
    serviceFn = g_serviceFn;
 
+   puts("bz2: starting");
+
    set_inbuf();
    nIn = strlen(inbuf)+1;
 
@@ -6163,6 +6168,7 @@ int main ( int argc, char** argv )
    }
 #endif
 
+   puts("bz2: OK");
    (*serviceFn)(0,0);
    /*NOTREACHED*/
    return 0;
