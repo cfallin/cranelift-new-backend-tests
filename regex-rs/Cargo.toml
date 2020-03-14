@@ -1,0 +1,7 @@
+[package]
+name = "regex-rs"
+version = "0.0.1"
+edition = "2018"
+
+[dependencies]
+regex = "1.3.5"
