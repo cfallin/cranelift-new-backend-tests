@@ -6169,7 +6169,5 @@ int main ( int argc, char** argv )
 #endif
 
    puts("bz2: OK");
-   (*serviceFn)(0,0);
-   /*NOTREACHED*/
    return 0;
 }
