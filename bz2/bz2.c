@@ -6134,6 +6134,7 @@ int main ( int argc, char** argv )
    nZ = M_BLOCK;
    r = BZ2_bzBuffToBuffCompress (
           zbuf, &nZ, inbuf, nIn, 9, 3/*verb*/, 30 );
+   printf("compressed length: %d\n", nZ);
 
    if (r != BZ_OK) {
      (*serviceFn)(0,3);
